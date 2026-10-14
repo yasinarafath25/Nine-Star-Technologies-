@@ -1984,3 +1984,81 @@ footer.site-footer {
 .mobile-drawer-link:hover {
   color: #0b74f5;
 }
+
+/* ==========================================================================
+   DYNAMIC CLEAN STATES & ADMIN LINK HELPERS
+   ========================================================================== */
+.empty-state-notice {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 56px 24px;
+  background: #ffffff;
+  border: 1.5px dashed var(--border-light);
+  border-radius: var(--radius-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+}
+.empty-state-notice.dark {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+.empty-state-icon {
+  font-size: 2.2rem;
+  opacity: 0.8;
+}
+.empty-state-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--obsidian-900);
+}
+.empty-state-notice.dark .empty-state-title {
+  color: #ffffff;
+}
+.empty-state-text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  max-width: 440px;
+  line-height: 1.6;
+}
+.empty-state-notice.dark .empty-state-text {
+  color: rgba(255, 255, 255, 0.65);
+}
+.admin-shortcut-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: 99px;
+  background: var(--obsidian-900);
+  color: var(--neon-lime);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+  margin-top: 4px;
+}
+.admin-shortcut-btn:hover {
+  transform: translateY(-2px);
+  background: #000;
+  color: #ffffff;
+}
+.admin-pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #0b74f5 !important;
+  font-weight: 700 !important;
+  padding: 4px 12px;
+  background: rgba(11, 116, 245, 0.08);
+  border-radius: 99px;
+  transition: all 0.2s ease;
+}
+.admin-pill-link:hover {
+  background: #0b74f5;
+  color: #ffffff !important;
+}
+
